@@ -1,0 +1,21 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-inner {
+  /*overflow */
+}
+
+.slider-slides {
+  width: 300%;
+}
+
+.slider-slides img {
+  float: left;
+}
