@@ -1,8 +1,44 @@
+html {
+  background-color: #000;
+  color: #fff; 
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
 }
+
+body,
+ {
+  font-family: "Roboto", "Arial", serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  
+}
+
+h3 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+
 
 .slider {
   position: relative;
@@ -19,3 +55,62 @@ body {
 .slider-slides img {
   float: left;
 }
+
+
+.skroll {
+  width: 400px;
+  background: black;
+  height: 5px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.skroll_left,
+.skroll_right {
+  position: absolute;
+  display: block;
+  width: 20px;
+  background: red;
+  height: 20px;
+  border-radius: 50%;
+  top: -8px;
+  z-index: 1;
+}
+
+.skroll_left {
+  left: 50px;
+}
+
+.skroll_right {
+  right: 50px;
+}
+
+.skroll_field {
+  width: 293px;
+  height: 5px;
+  background: green;
+  position: absolute;
+  left: 54px;
+} 
+
+
+
+
+
+.btn {
+ .Подложка {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  position: absolute;
+  left: 460px;
+  top: 542px;
+  width: 280px;
+  height: 64px;
+  z-index: 34;
+}
+ 
+}
+
+
