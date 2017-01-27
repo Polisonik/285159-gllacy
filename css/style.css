@@ -41,9 +41,147 @@ h3 {
   font-weight: bold;
 }
 
+.clearfix::after {
+  content:"";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+
+.container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+  background-color: #849d8f;
+}
+
+.logo {
+  float: left;
+  width: 152px;
+  min-height: 64px;
+  margin-right: 22px;
+}
+
+.main-navigation {
+  float: left;
+  margin-right: 267px;
+  width: 410px;
+  min-height: 64px;
+}
+
+.user-blok {
+  float: right;
+  margin-left: 26px;
+  width: 267px;
+  min-height: 64px;
+}
+
+.timetable {
+  position: absolute;
+  top: 70px;
+  right: 100px;
+}
+
+
+
 .slider {
   position: relative;
+  min-height: 584px;
 }
+
+.gift-container{
+  min-height: 260px;
+  margin-bottom: 35px;
+}
+
+.gift-item {
+  float: left;
+  width: 560px;
+  min-height: 260px;
+  margin-right: 26px;
+}
+
+
+.gift-item:last-child {
+  margin-right: 0px;
+}
+
+.ice-cream {
+  margin-bottom: 39px;
+  font-size: 0px;
+}
+
+.ice-cream-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 267px;
+  min-height: 232px;
+  margin-right: 28px;
+  font-size: 16px;
+}
+
+.ice-cream-item:last-child {
+  margin-right: 0;
+}
+
+.features {
+  min-height: 308px;
+  margin-bottom: 40px;
+}
+
+.communion {
+  margin-bottom: 40px;
+}
+
+.communion-item {
+  width: 562px;
+  min-height: 220px;
+  float: left;
+  margin-right: 26px;
+}
+
+.communion-item:last-child {
+  margin-right: 0px;
+}
+
+.contacts {
+  box-sizing: border-box;
+  width:1200px;
+  min-height: 430px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-footer {
+  min-height:103px;
+}
+
+.footer-socials{
+  width: 269px;
+  float: left;
+  min-height:103px;
+  margin-right: 26px;
+}
+
+.provider-info {
+  float: left;
+  min-height:103px;
+  width: 560px;
+  margin-right: 26px;
+}
+
+.footer-copyright {
+  float: right;
+  min-height:103px;
+  width: 267px;
+  
+}
+
 
 .slider-inner {
   
