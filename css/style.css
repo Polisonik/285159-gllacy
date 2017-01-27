@@ -16,6 +16,7 @@ body
   line-height: 22px;
   color: #ffffff;
   font-weight: bold;
+  
 }
 
 h1 {
@@ -47,44 +48,54 @@ h3 {
   clear: both;
 }
 
+.wrapper {
+  width: 1200px;
+  background-color: #849d8f;
+  margin: 0 auto;
+  outline: 2px solid #0deb6c;
+}
+
 .main-header {
-  margin-top: 9px;
   margin-bottom: 10px;
+  outline: 2px solid #0deb6c;
 }
 
 .container {
   position: relative;
-  width: 1200px;
-  margin: 0 auto;
   padding: 0 27px;
-  background-color: #849d8f;
+  outline: 2px solid #0deb6c;
 }
 
 .logo {
   float: left;
   width: 152px;
-  min-height: 64px;
+  min-height: 74px;
   margin-right: 22px;
+  outline: 2px solid #0deb6c;
 }
 
 .main-navigation {
   float: left;
   margin-right: 267px;
   width: 410px;
-  min-height: 64px;
+  min-height: 74px;
+  outline: 2px solid #0deb6c;
 }
 
 .user-blok {
   float: right;
   margin-left: 26px;
   width: 267px;
-  min-height: 64px;
+  min-height: 74px;
+  outline: 2px solid #0deb6c;
 }
+
 
 .timetable {
   position: absolute;
   top: 70px;
   right: 100px;
+  outline: 2px solid #0deb6c;
 }
 
 
@@ -92,28 +103,34 @@ h3 {
 .slider {
   position: relative;
   min-height: 584px;
+  outline: 2px solid #0deb6c;
 }
+
 
 .gift-container{
   min-height: 260px;
   margin-bottom: 35px;
+  outline: 2px solid #0deb6c;
 }
 
 .gift-item {
   float: left;
   width: 560px;
-  min-height: 260px;
+  min-height: 230px;
   margin-right: 26px;
+  outline: 2px solid #0deb6c;
 }
 
 
 .gift-item:last-child {
   margin-right: 0px;
+  
 }
 
 .ice-cream {
   margin-bottom: 39px;
   font-size: 0px;
+  outline: 2px solid #0deb6c;
 }
 
 .ice-cream-item {
@@ -121,28 +138,32 @@ h3 {
   vertical-align: top;
   width: 267px;
   min-height: 232px;
-  margin-right: 28px;
+  margin-right: 26px;
   font-size: 16px;
+  outline: 2px solid #0deb6c;
 }
 
-.ice-cream-item:last-child {
+.ice-cream-item:nth-child(4n) {
   margin-right: 0;
 }
 
 .features {
   min-height: 308px;
   margin-bottom: 40px;
+  outline: 2px solid #0deb6c;
 }
 
 .communion {
   margin-bottom: 40px;
+  outline: 2px solid #0deb6c;
 }
 
 .communion-item {
-  width: 562px;
+  width: 560px;
   min-height: 220px;
   float: left;
   margin-right: 26px;
+  outline: 2px solid #0deb6c;
 }
 
 .communion-item:last-child {
@@ -151,21 +172,39 @@ h3 {
 
 .contacts {
   box-sizing: border-box;
-  width:1200px;
+  width: 1200px;
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
   min-height: 430px;
   margin: 0 auto;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+  outline: 2px solid #0deb6c;
+}
+
+.contacts-form {
+  position: absolute;
+  top: 62px;
+  right: 26px;
+  width: 303px;
+  height: 305px;
+  background-color: #fefefe;
+  color: #000000;
+  outline: 2px solid #0deb6c;
 }
 
 .main-footer {
   min-height:103px;
+  
 }
 
 .footer-socials{
-  width: 269px;
+  width: 267px;
   float: left;
   min-height:103px;
   margin-right: 26px;
+  outline: 2px solid #0deb6c;
 }
 
 .provider-info {
@@ -173,13 +212,14 @@ h3 {
   min-height:103px;
   width: 560px;
   margin-right: 26px;
+  outline: 2px solid #0deb6c;
 }
 
 .footer-copyright {
   float: right;
   min-height:103px;
   width: 267px;
-  
+  outline: 2px solid #0deb6c;
 }
 
 
@@ -196,12 +236,15 @@ h3 {
 }
 
 
+
+
 .skroll {
   width: 400px;
   background: black;
   height: 5px;
   margin-top: 20px;
   position: relative;
+  outline: 2px solid #0deb6c;
 }
 
 .skroll_left,
@@ -231,3 +274,30 @@ h3 {
   position: absolute;
   left: 54px;
 } 
+
+.filter {
+  width: 880px;
+  min-height: 138px;
+  margin-bottom: 39px;
+  outline: 2px solid #0deb6c;
+}
+
+
+
+.search-result {
+  font-size: 0px;
+}
+
+.ice-cream-item-result {
+  display: inline-block;
+  vertical-align: top;
+  width: 267px;
+  min-height: 232px;
+  margin-right: 26px;
+  font-size: 16px;
+  outline: 2px solid #0deb6c;
+}
+
+.ice-cream-item-result:nth-child(4n) {
+  margin-right: 0;
+}
