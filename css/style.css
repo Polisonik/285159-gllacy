@@ -170,6 +170,14 @@ h3 {
   
 }
 
+.raspberries {
+  background: url(../img/raspberries.jpg);
+}
+
+.chocolate {
+  background:url('../img/chocolate.jpg')
+}
+
 .ice-cream {
   margin-bottom: 39px;
   font-size: 0px;
@@ -177,6 +185,7 @@ h3 {
 }
 
 .ice-cream-item {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 267px;
@@ -190,10 +199,17 @@ h3 {
   margin-right: 0;
 }
 
+.ice-cream-hit img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  
+}
+
 .features {
   margin-bottom: 40px;
   width: 1146px;
-  background: url('../img/wafe_pattern.jpg')
+  background: #ffffff url('../img/wafe_pattern.jpg') repeat;
  }
 
 .features h3 {
@@ -202,6 +218,7 @@ h3 {
 }  
 
 .features-left  {
+  position: relative;
   float: left;
   width: 560px;
   margin-right: 26px;
@@ -215,15 +232,31 @@ h3 {
   padding-left: 75px;
 }
 
-::before  {
-  background: url('../img/ice-cream-icon.png') no-repeat;
+.ice-cream-icon::before  {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  
+  width: 49px;
+  height: 49px;
+  background: transparent url('../img/ice-cream-icon.png') no-repeat;
 } 
 
 .leaf-icon::before {
-  background: url('../img/leaf.png') no-repeat;
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  
+  width: 49px;
+  height: 49px;
+  
+  background: transparent url('../img/leaf.png') no-repeat;
 }
 
 .features-right {
+  position: relative;
   float:right;
   width: 560px;
 }
@@ -236,11 +269,28 @@ h3 {
 }
 
 .cow-icon::before {
-  background: url('../img/cow-icon.png') no-repeat;
+  position: absolute;
+  content: "";
+  
+  top: 0px;
+  left: 20px;
+  
+  width: 49px;
+  height: 49px;
+  
+  background: transparent url('../img/cow-icon.png') no-repeat;
 }
 
 .thermometer-icon::before {
-  background: url('../img/thermometer-icon.png') no-repeat;
+  position: absolute;
+  content: "";
+  
+  top: 100px;
+  left: 20px;
+  
+  width: 49px;
+  height: 49px;
+  background: transparent url('../img/thermometer-icon.png') no-repeat;
 } 
 
 .communion {
@@ -259,6 +309,26 @@ h3 {
 .communion-item:last-child {
   margin-right: 0px;
 }
+
+.blog {
+  font-size: 16px;
+  line-height: 22px;
+  color:  #323232;
+  background: #ffffff url('../img/strawberry-background.jpg') no-repeat;
+}
+
+.blog a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.subscribe {
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+  background-image: url('../img/letter_pattern.png');
+  }
 
 .contacts {
   box-sizing: border-box;
