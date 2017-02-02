@@ -18,16 +18,8 @@
               </a>
             </div>
             <nav class="main-navigation">
-              <ul class=main-menu>
-                <li class="current">Каталог
-                  <ul class="main-submenu">
-                    <li><a href="#">Новинки</a></li>
-                    <li>Сливочное</li>
-                    <li><a href="#">Щербеты</a></li>
-                    <li><a href="#">Фруктовый лед</a></li>
-                    <li><a href="#">Мелорин</a></li>
-                  </ul>
-                </li>  
+              <ul class="catalog-menu">
+                <li class="current">Каталог</li>  
                 <li><a href="#">Доставка и оплата</a></li>
                 <li><a href="#">О Компании</a></li>
               </ul>
@@ -76,10 +68,10 @@
             
                 <div class="sorting-price">
                   <div class="price">
-                    <p>Цена:</p>
+                    <span>Цена:</span>
                     <input type="text" name="price_min" value="100 руб.">
                     <span>-</span> 
-                    <input type="text" name="price_max" value="500 руб.">  
+                    <input type="text" name="price_max" value="500 руб."> 
                   </div>  
                 
                   <div class="skroll">
@@ -92,7 +84,7 @@
                 <div class="sorting-fatness">
                   <p>Жирность</p>
                   <div class="sorting-fatness-item">
-                    <input id="0" type="radio" name="0">
+                    <input type="radio" id="0" name="0">
                     <label for="0">0%</label>
                   </div>
                   <div class="sorting-fatness-item">
@@ -268,13 +260,15 @@
               <a class="btn btn-vk" href="">Vk</a>
             </div>
           
-            <div class="provider-info">
-              <ul>
+            <div class="provider-info clearfix">
+              <ul class="provider-info-left">
                 <li><a href="#">Для поставщиков</a></li>
                 <li><a href="#">О производстве</a></li>
+              </ul>
+              <ul class="provider-info-right">
                 <li><a href="#">Наши документы</a></li>
                 <li><a href="#">Экологические стандарты</a></li>
-              </ul>
+              </ul>  
             </div>
           
             <div class="footer-copyright">
