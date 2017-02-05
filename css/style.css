@@ -1,7 +1,5 @@
 html {
-  background-color: #000;
-  color: #fff; 
-}
+  }
 
 html,
 body {
@@ -15,31 +13,8 @@ body
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
-  font-weight: bold;
+  background-color: #000;
   
-}
-
-h1 {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-size: 35px;
-  line-height: 41px;
-  font-weight: bold;
-  
-}
-
-h2 {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: bold;
-  
-}
-
-h3 {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-size: 35px;
-  line-height: 41px;
-  font-weight: bold;
 }
 
 .clearfix::after {
@@ -62,98 +37,200 @@ h3 {
 
 .container {
   position: relative;
-  padding: 0 27px;
+  padding: 0 24px;
   outline: 2px solid #0deb6c;
 }
 
 .logo {
   float: left;
   width: 152px;
-  min-height: 74px;
-  margin-right: 22px;
-  outline: 2px solid #0deb6c;
+  margin-right: 12px;
+  padding-top: 10px;
+  padding-left: 0px;
+  
 }
 
 .main-navigation {
   float: left;
-  width: 410px;
-  min-height: 74px;
-  outline: 2px solid #0deb6c;
+  width: 397px;
+  
+  
 }
 
 .main-menu {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 0;
+  margin-top: 0px;
+    
 }
 
 .main-menu > li{
   position: relative;
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: top;
   white-space: nowrap;
+  
+  font-size: 16px;
+  line-height: 18px;
+  
     
 }
 
 .main-menu a {
   display: block;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.main-menu a:hover {
+  background: #f7f6f3;
+  border-radius: 14px;
+  color: #000;
+}
+
+ .main-submenu{
+  width: 144px;
+  min-height: 170px; 
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  
+  display: none;
+  list-style: none;
+  margin: 0;  
+  padding: 0;
+  background-color: #f8f7f4;
+  border-radius: 4px; 
+  
   
 }
 
-.main-menu .main-submenu {
-  position: absolute;
-  display: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.main-submenu a{
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 21px;
+  font-weight: 400;
+  
 }
+
+.main-submenu .novelty {
+  
+  font-weight: 700;
+}
+
 
 .main-menu > li:hover .main-submenu {
   display: block;
-  
-  top: 15px;
+  top: 38px;
   left: 0px;
   z-index: 1;
 }
 
 .main-submenu a:hover {
-  background-color: #fbded7
+   border-radius: 0px;
+  background-color: #fbded7;
 }
 
 .user-blok {
+  position: relative;
   float: right;
-  margin-left: 26px;
   width: 267px;
   min-height: 74px;
   outline: 2px solid #0deb6c;
 }
 
 .user-blok > div  {
-  display: inline;
-  vertical-align: bottom;
+  display: inline-block;
+  vertical-align: top;
 }
 
+.user-blok a {
+  display: block; 
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-icon {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #a1b5aa;
+  background-image: url('../img/Search.png'); 
+  background-repeat:  no-repeat;
+  background-position: 50%;
+}
+
+.login-icon {
+  width: 92px;
+  height: 33px;
+  border-radius: 15px;
+  background-color: #a1b5aa;
+  background-image: url('../img/enter.png'); 
+  background-repeat:  no-repeat;
+  background-position: 15px 5px;
+  
+  
+}
+
+.shopping-icon {
+  width: 118px;
+  height: 33px;
+  border-radius: 15px;
+  background-color: #a1b5aa;
+  background-image: url('../img/cart.png'); 
+  background-repeat:  no-repeat;
+  background-position: 15px 5px;
+}
 
 .timetable {
   position: absolute;
-  top: 70px;
-  right: 100px;
-  outline: 2px solid #0deb6c;
+  top: 60px;
+  right: 24px;
+  outline: 2px solid yellow;
 }
 
+.time {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.phone {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: right;
+}
 
 
 .slider {
   position: relative;
   min-height: 584px;
   outline: 2px solid #0deb6c;
+  
 }
 
 
 .gift-container{
   min-height: 260px;
-  margin-bottom: 35px;
-  outline: 2px solid #0deb6c;
+  margin-bottom: 10px;
+  
 }
 
 .gift-item {
@@ -161,13 +238,12 @@ h3 {
   width: 560px;
   min-height: 230px;
   margin-right: 26px;
-  outline: 2px solid #0deb6c;
+  border-radius: 13px;
 }
 
 
 .gift-item:last-child {
   margin-right: 0px;
-  
 }
 
 .raspberries {
@@ -178,6 +254,39 @@ h3 {
   background:url('../img/chocolate.jpg')
 }
 
+.gift-item h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  margin-top: 19px;
+  margin-bottom: 13px;
+  margin-left: 19px;
+}
+
+.gift-item p {
+  margin:0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+/*.btn {
+  width: 280px;
+  height: 64px;
+  background-image: linear-gradient(90deg, #e74a35, #f26843);
+  
+  position: absolute;
+  left: 460px;
+  top: 542px;
+ 
+  z-index: 10;
+}
+*/
+ 
 .ice-cream {
   margin-bottom: 39px;
   font-size: 0px;
@@ -199,10 +308,46 @@ h3 {
   margin-right: 0;
 }
 
+.ice-cream-image img {
+  border-radius: 50%;
+  margin-bottom: 7px;
+}
+
+
 .ice-cream-hit img {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 0px;
+  left: 0px;
+  
+  
+}
+
+.ice-cream-price {
+  position: absolute;
+  left: 0px;
+  top: 210px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.ice-cream-price span {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+  
+}
+
+.ice-cream-name {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #fff;
+  padding-left: 5px;
+  padding-right: 3px;
+  text-align: center;
   
 }
 
@@ -210,11 +355,20 @@ h3 {
   margin-bottom: 40px;
   width: 1146px;
   background: #ffffff url('../img/wafe_pattern.jpg') repeat;
+  padding-top: 1px;
+  border-radius: 13px;
+  color: #000;
  }
 
 .features h3 {
   margin: 0;
   padding: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-top: 23px;
+  margin-left: 22px;
+  margin-bottom: 23px;
 }  
 
 .features-left  {
@@ -228,15 +382,18 @@ h3 {
 .features-left p {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
-  padding-left: 75px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  padding-left: 78px;
 }
 
 .ice-cream-icon::before  {
   content: "";
   position: absolute;
-  top: 0px;
-  left: 20px;
+  top: -13px;
+  left: 22px;
   
   width: 49px;
   height: 49px;
@@ -246,9 +403,8 @@ h3 {
 .leaf-icon::before {
   content: "";
   position: absolute;
-  top: 100px;
-  left: 20px;
-  
+  top: 75px;
+  left: 22px;
   width: 49px;
   height: 49px;
   
@@ -264,16 +420,20 @@ h3 {
 .features-right p {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
-  padding-left: 75px;
+  margin-bottom: 23px;
+  padding-left: 59px;
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
 }
 
 .cow-icon::before {
   position: absolute;
   content: "";
   
-  top: 0px;
-  left: 20px;
+  top: -13px;
+  left: 2px;
   
   width: 49px;
   height: 49px;
@@ -285,8 +445,8 @@ h3 {
   position: absolute;
   content: "";
   
-  top: 100px;
-  left: 20px;
+  top: 75px;
+  left: 2px;
   
   width: 49px;
   height: 49px;
@@ -304,6 +464,7 @@ h3 {
   float: left;
   margin-right: 26px;
   outline: 2px solid #0deb6c;
+  border-radius: 14px;
 }
 
 .communion-item:last-child {
@@ -317,18 +478,52 @@ h3 {
   background: #ffffff url('../img/strawberry-background.jpg') no-repeat;
 }
 
+.blog p {
+  margin:0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #323232;
+  padding-left: 20px;
+  padding-top: 23px;
+  padding-bottom: 5px;
+}
+
 .blog a {
+  display: block;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  color: #323232;
+  padding-left: 20px;
+  padding-right: 258px;
 }
 
 .subscribe {
+  
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400px;
   color: #5a5a5a;
   background-image: url('../img/letter_pattern.png');
-  }
+}
+ 
+.subscribe p {
+  padding-top: 18px;
+  padding-left: 27px;
+  padding-right: 15px;
+  margin-bottom: 35px;
+}
+
+.subscribe input[type="text"] {
+  margin-left: 27px;
+  padding-left: 11px;
+  padding-top: 12px;
+  padding-right: 157px;
+  padding-bottom: 11px;
+  border-radius: 4px;
+}
 
 .contacts {
   box-sizing: border-box;
@@ -534,9 +729,11 @@ h3 {
 
 .search-result {
   font-size: 0px;
+  margin-bottom: 60px;
 }
 
 .ice-cream-item-result {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 267px;
@@ -548,4 +745,44 @@ h3 {
 
 .ice-cream-item-result:nth-child(4n) {
   margin-right: 0;
+}
+
+
+.pagination {
+   width: 280px;
+   padding: 10px;
+   margin-left: 0px;
+   white-space: nowrap;
+  }
+
+
+.pagination a {
+  display: inline-block;
+  vertical-align: bottom;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #fff;
+  min-width: 27px;
+  height: 26px;
+  padding: 0 10px;
+  
+  
+}
+
+.previous {
+ margin-right: 10px;
+}
+
+.next{
+  margin-left: 10px;
+}
+
+.current-page {
+  color: #000;
+  min-width: 27px;
+  height: 27px;
+border-radius: 50%;
+  background: #ffffff; 
 }
