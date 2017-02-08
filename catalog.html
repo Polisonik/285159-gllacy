@@ -19,8 +19,8 @@
               </a>
             </div>
             <nav class="main-navigation">
-              <ul class="catalog-menu">
-                <li class="current">Каталог</li>  
+              <ul class="main-menu">
+                <li class="current"><a>Каталог</a></li>  
                 <li><a href="#">Доставка и оплата</a></li>
                 <li><a href="#">О Компании</a></li>
               </ul>
@@ -39,19 +39,21 @@
             </div>
           
             <div class="timetable">	     
-              <p>С 10 до 20, ежедневно<br> 		
-              <span>8 812 450-25-25</span> 		
-              </p>
+              <p class="time">С 10 до 20, ежедневно</p> 		
+              <p class="phone">8 812 450-25-25</p>	
             </div>  
           </div>
         </header>
     
         <main class="container">
-          <div class="breadcrumbs">
-            <a href="index.html">Главная</a>
-            <a href="#">Каталог</a>
-            <a href="#">Сливочное</a>      
-          </div>
+          <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            <span>&raquo;</span>
+            <li><a href="#">Каталог</a></li>
+            <span>&raquo;</span>
+            <li>Сливочное</li>   
+          </ul>  
+          
       
           <div class="product-item">
             <h1>Сливочное мороженое</h1>
@@ -71,62 +73,62 @@
                   <div class="price">
                     <span>Цена:</span>
                     <input type="text" name="price_min" value="100 руб.">
-                    <span>-</span> 
+                    <span>&ndash;</span> 
                     <input type="text" name="price_max" value="500 руб."> 
                   </div>  
                 
                   <div class="skroll">
-                    <button class="skroll_left"></button>
-                    <button class="skroll_right"></button>
+                    <div class="skroll_left"></div>
+                    <div class="skroll_right"></div>
                     <div class="skroll_field"></div>
                   </div>
                 </div>
             
-                <div class="sorting-fatness">
-                  <p>Жирность</p>
-                  <div class="sorting-fatness-item">
-                    <input type="radio" id="0" name="0">
+                <div class="fatness">
+                  <p>Жирность:</p>
+                  <div class="fatness-item">
+                    <input type="radio" id="0" value="0" name="0" >
                     <label for="0">0%</label>
                   </div>
-                  <div class="sorting-fatness-item">
-                    <input id="to10" type="radio" name="to10">
-                    <label for="to10">до 10%</label>
+                  <div class="fatness-item">
+                    <input id="10" type="radio" value="10" name="10">
+                    <label for="10">до 10%</label>
                   </div>
-                  <div class="sorting-fatness-item">
-                    <input id="to30" type="radio" name="to30">
-                    <label for="to30">до 30%</label>
+                  <div class="fatness-item">
+                    <input id="30" type="radio" value="30" name="30">
+                    <label for="30">до 30%</label>
                   </div>
-                  <div class="sorting-fatness-item">
-                    <input id="higher30" type="radio" name="higher30">
-                    <label for="higher30">выше 30%</label>
+                  <div class="fatness-item">
+                    <input id="higher" type="radio" value="higher" name="higher">
+                    <label for="higher">выше 30%</label>
                   </div>  
                 </div>
             
-                <div class="sorting-topping">
-                  <p>Наполнитель</p>
-                  <div class="sorting-topping-item">
+                <div class="toppings">
+                  <p>Наполнитель:</p>
+                  <div class="topping-item">
                     <input id="chocolate" type="checkbox" name="chocolate">
                     <label for="chocolate">шоколадные</label>
                   </div> 
-                  <div class="sorting-topping-item"> 
+                  <div class="topping-item"> 
                     <input id="sugar" type="checkbox" name="sugar">
                     <label for="sugar">сахарные присыпки</label>
                   </div>
-                  <div class="sorting-topping-item">
-                    <input id="fruit" type="checkbox" name="fruit">
+                  <div class="topping-item">
+                    <input id="fruit" type="checkbox" name="fruit" disabled checked>
                     <label for="fruit">фрукты</label>
                   </div>
-                  <div class="sorting-topping-item">
+                  <div class="topping-item">
                     <input id="syrup" type="checkbox" name="syrup">
                     <label for="syrup">сиропы</label>
                   </div>
-                  <div class="sorting-topping-item">
+                  <div class="topping-item">
                     <input id="jam" type="checkbox" name="jam">
                     <label for="jam">джемы</label>
                   </div>
                 </div>
             
-                <button class="btn btn-search" type="submit">Применить</button>
+                <button class="filter-apply" type="submit">Применить</button>
               </form>  
             </div>
         
@@ -263,7 +265,7 @@
           
             <div class="provider-info clearfix">
               <ul class="provider-info-left">
-                <li><a href="#">Для поставщиков</a></li>
+                <li><a href="#"><b>Для поставщиков</b></a></li>
                 <li><a href="#">О производстве</a></li>
               </ul>
               <ul class="provider-info-right">
@@ -274,7 +276,7 @@
           
             <div class="footer-copyright">
               <a href="#"><img src="img/academy.png" width="108" height="38" alt="Html Academy"></a>
-              <p>Сделано в HTML Academy 	&#169; 2017</p>
+              <p>Сделано в <a class="by" href="https://htmlacademy.ru/">HTML Academy</a> &#169; 2017</p>
             </div>
           </div>
         </footer>
