@@ -747,8 +747,10 @@ body
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-.main-footer a:hover,
-.main-footer a:active {
+.provider-info a:hover,
+.provider-info a:active,
+.footer-copyright .by:hover,
+.footer-copyright .by:active {
   color: #ffbc9e;
   border-bottom-color: #ffbc9e;
 }
