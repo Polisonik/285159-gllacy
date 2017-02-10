@@ -38,9 +38,21 @@
             <div class="user-blok">
               <div class="search">
                 <a class="search-icon" href="#"></a>
+                <div class="search-hover">
+                    <input type="text" name="search" placeholder="Что ищем?">
+                  </div>  
             </div>
-            <div class="login">
-              <a class="login-icon" href="#">Вход</a>
+            <div class="enter">
+              <a class="enter-icon" href="#">Вход</a>
+              <div class="enter-hover">
+                <input type="text" name="email" placeholder="Электронная почта">
+                <input type="text" name="login" placeholder="Пароль">
+                <button class="btn enter-btn" type="submit">Войти</button>
+                <div class="enter-link">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>  
+              </div>  
             </div>
             <div class="shopping-cart">
               <a class="shopping-icon" href="#">Пусто</a>
@@ -48,18 +60,14 @@
             </div>
         
             <div class="timetable">	     
-              <p class="time">С 10 до 20, ежедневно</p> 		
-              <p class="phone">8 812 450-25-25</p> 		
+              <p>С 10 до 20, ежедневно</p> 		
+              <p>8 812 450-25-25</p> 		
             </div>  
           </div>  
         </header>
     
         <main> 
           <div class="container clearfix">
-            <div class="slider-switch">
-              
-            </div>  
-          
             <div class="slider">
               <div class="slide" id="slide1">
                 <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
@@ -155,7 +163,9 @@
             <div class="communion clearfix">
               <section class="communion-item blog">
                 <p>Новое в нашем блоге</p>
-                <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+                <p> 
+                  <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+                </p>  
               </section>
 
               <section class="communion-item subscribe">
@@ -174,9 +184,9 @@
             <div class="map" id="interactive-map"></div>
             <div class="contacts-form">
               <p>Адрес главного офиса и офлайн магазина:</p>
-              <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+              <p class="adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
               <p>Для заказов по телефону:</p>
-              <b>8 812 450-25-25</b> 
+              <p class="phone-number">8 812 450-25-25</p> 
               <p>(с 10 до 20 ежедневно)</p>
               <a class="btn btn-form" href="#">Форма обратной связи</a>
             </div>
