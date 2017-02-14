@@ -40,10 +40,8 @@
                 <a class="search-icon" href="#"></a>
                 <div class="search-hover">
                   <form class="search-subject">
-                    <div class="wrapper-input">
-                      <input type="text" id="search" name="search" placeholder="Что ищем?" >
-                      <label for="search">Что ищем?</label>
-                    </div>  
+                    <input type="text" id="find" name="find" placeholder="Что ищем?" >
+                    <label for="find">Что ищем?</label>
                   </form>  
                 </div>  
             </div>
@@ -51,17 +49,11 @@
               <a class="enter-icon" href="#">Вход</a>
               <div class="enter-hover">
                 <form class="enter-form" method="post" action="#">
-                  <div class="wrapper-input">
-                    <input type="text" id="email" name="email" placeholder="Электронная почта">
-                    <label for="email">Электронная почта</label>
-                  </div>  
-                  <div class="wrapper-input">
-                    <input type="text" id="login" name="login" placeholder="Пароль">
-                    <label for="login">Пароль</label>
-                  </div> 
-                  
+                  <input type="text" id="email" name="email" placeholder="Электронная почта">
+                  <label for="email">Электронная почта</label>
+                  <input type="text" id="login" name="login" placeholder="Пароль">
+                  <label for="login">Пароль</label>
                   <button class="btn btn-enter" type="submit">Войти</button>
-                   
                   <div class="enter-link">
                     <a href="#">Забыли пароль?</a>
                     <a href="#">Новая регистрация</a>
@@ -187,7 +179,10 @@
                 <div class="subscribe-background">
                   <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
                   <form method="post" action="https://echo.htmlacademy.ru">
-                    <input type="text" name="email"  placeholder="Электронная почта">
+                    <div class="subscribe-input">
+                      <input type="text" id="email-address" name="email-address"  placeholder="Электронная почта">
+                      <label for="email-address">Электронная почта</label>
+                    </div>  
                     <button type="submit" class="btn btn-subscribe">Отправить</button>
                   </form>
                 </div>  
@@ -209,7 +204,7 @@
    
         </main>
     
-        <footer class="main-footer">
+        <footer class="main-footer clearfix">
           <div class="container clearfix">
             <div class="footer-socials">
               <a class="link link-tw" href="#">Twitter</a>
@@ -259,7 +254,7 @@
     </div>  
     <div class="modal-overlay"></div>
     
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=5M9b_7KjkB15a9XLBF0X9IHAoAzjGrNx&amp;width=1200&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=interactive-map"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=5M9b_7KjkB15a9XLBF0X9IHAoAzjGrNx&amp;width=100%&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=interactive-map"></script>
     
     
     <script src="js/modal-window.js"></script>
