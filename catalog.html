@@ -11,7 +11,7 @@
     
     <body>
       <div class="site-wrapper-inner">
-        <div class="content-wrapper">
+        <div class="content-wrapper-inner">
           <header class="main-header">
             <div class="container clearfix">
               <div class="logo">
@@ -21,7 +21,7 @@
               </div>
               <nav class="main-navigation">
                 <ul class="main-menu">
-                  <li class="current"><a href="#">Каталог</a>
+                  <li><a class="current" href="#">Каталог</a>
                     <ul class="main-submenu">
                       <li><a class="novelty" href="#">Новинки</a></li>
                       <li class="current-product"><a>Сливочное</a></li>
@@ -112,7 +112,7 @@
             </div>
           </header>
     
-          <main class="container">
+          <main class="container clearfix">
             <ul class="breadcrumbs">
               <li><a href="index.html">Главная</a></li>
               <span>&raquo;</span>
@@ -143,7 +143,7 @@
                       <span>&ndash;</span> 
                       <input type="text" name="price_max" value="500 руб."> 
                     </div>  
-                    <div class="wrapper-filter">
+                    <div class="wrapper-skroll">
                       <div class="skroll">
                         <div class="skroll_left"></div>
                         <div class="skroll_right"></div>
@@ -154,7 +154,7 @@
             
                   <div class="fatness">
                     <p>Жирность:</p>
-                    <div class="wrapper-filter">
+                    <div class="wrapper-fatness">
                       <div class="fatness-item">
                         <input type="radio" id="zero" value="zero" name="zero" >
                         <label for="zero">0%</label>
@@ -176,7 +176,7 @@
             
                   <div class="toppings">
                     <p>Наполнитель:</p>
-                    <div class="wrapper-filter">
+                    <div class="wrapper-toppings">
                       <div class="topping-item">
                         <input id="chocolate" type="checkbox" name="chocolate">
                         <label for="chocolate">шоколадные</label>
@@ -314,7 +314,7 @@
                 </div>
               </div>
           
-              <div class="pagination clearfix">
+              <div class="pagination">
                 <a class="previous" href="#">&lt;</a>
                 <a class="page page-current" href="#">1</a>
                 <a href="#" class="page">2</a>
