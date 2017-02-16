@@ -24,7 +24,6 @@ body
 }
 
 .site-wrapper {
-  width: 1200px;
   background-color: #849d8f;
   background-image: url("../img/ice-cream-1.png");
   background-repeat: no-repeat;
@@ -74,8 +73,9 @@ body
 
 .logo img {
   padding-top: 9px;
-  padding-left: 0px;
+  padding-left: 0;
 }
+
 
 .main-navigation {
   float: left;
@@ -191,12 +191,10 @@ body
   content: "";
   height: 1px;
   background-color: #d1d0ce;
-  bottom: 0;
+  bottom: 2px;
   left: 6px;
   right: 9px;
 } 
-
-
 
 .main-menu > li:hover .main-submenu {
   display: block;
@@ -222,13 +220,12 @@ body
 }
 
 
-
 .user-blok {
   position: relative;
   float: right;
   width: 261px;
   margin-top: 23px;
-  margin-right: 0px;
+  margin-right: 0;
   margin-bottom: 3px;
   
 }
@@ -268,7 +265,7 @@ body
   width: 17px;
   height: 17px;
   top: 7px;
-  left: 6px;
+  left: 9px;
   background-image: url('../img/sprite.png'); 
   background-position: -10px -10px ;
   background-repeat:  no-repeat;
@@ -284,8 +281,8 @@ body
   content: "";
   width: 17px;
   min-height: 17px;
-  top: 8px;
-  left: 8px;
+  top: 7px;
+  left: 9px;
   background-image: url('../img/sprite.png'); 
   background-position: -10px -47px;;
   background-repeat:  no-repeat;
@@ -346,7 +343,7 @@ body
 
 .search-subject label {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 32px;
   opacity: 0;
 }
@@ -380,7 +377,7 @@ body
   position:absolute;
   content: "";
   top: 6px;
-  left: 21px;
+  left: 16px;
   width: 21px;
   height: 19px;
   background-image: url('../img/sprite.png'); 
@@ -397,8 +394,8 @@ body
 .enter-icon:hover::before {
   position:absolute;
   content: "";
-  top: 5px;
-  left: 10px;
+  top: 6px;
+  left: 16px;
   width: 21px;
   height: 19px;
   background-image: url('../img/sprite.png'); 
@@ -426,7 +423,8 @@ body
   z-index: 30;
 }
 
-.enter-hover input[type="text"] {
+.enter-hover input[type="text"],
+.enter-hover input[type="password"]{
   width: 240px;
   padding-left: 14px;
   padding-right: 14px;
@@ -446,36 +444,29 @@ body
   font-weight: 400;
 }
 
-.enter-hover input[type="text"]:focus {
+.enter-hover input[type="text"]:focus,
+.enter-hover input[type="password"]:focus{
   border: 1px solid #8fbdec;
   box-shadow: 0 0 0 1px #8fbdec;
 }
 
-.enter-hover input[name="login"] {
-  margin-top: 0px;
+.enter-hover input[name="email"] {
+  margin-bottom: 0;
 }
-.enter-form {
+
+.enter-input {
   position: relative;
 }
 
-.enter-form label {
+.enter-input label {
   position: absolute;
   top: 5px;
   left: 32px;
   opacity: 0;
 }
 
-.enter-form input[name="email"]:focus + label {
-  opacity: 1;
-  font-size: 11px;
-  line-height: 13px;
-  font-weight: 400;
-  color: #5b9ddf;
-} 
-
-.enter-form input[name="login"]:focus + label {
-  top: 77px;
-  left: 32px;
+.enter-input input[name="email"]:focus + label,
+.enter-input input[name="login"]:focus + label {
   opacity: 1;
   font-size: 11px;
   line-height: 13px;
@@ -493,7 +484,7 @@ body
   background: #f06240;
   background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
  /* box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64); */
-  border-radius: 100px;
+  border-radius: 40px;
 }
 
 .btn-enter {
@@ -562,15 +553,26 @@ body
 
 .shopping-icon-full {
   position: relative;
-  padding-left: 45px;
+  padding-left: 44px;
   padding-right: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.shopping-icon::before,
+.shopping-icon::before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 19px;
+  width: 21px;
+  height: 20px;
+  background-image: url('../img/sprite.png'); 
+  background-repeat:  no-repeat;
+  background-position: -10px -84px;
+} 
+
 .shopping-icon-full::before {
   position: absolute;
   content: "";
@@ -604,7 +606,7 @@ body
 .timetable {
   position: absolute;
   top: 73px;
-  right: 27px;
+  right: 25px;
 }
 
 .timetable p:first-of-type {
@@ -632,7 +634,7 @@ body
   text-align: center;
   padding-top: 284px;
   color: #fff;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .slide {
@@ -646,7 +648,7 @@ body
   line-height: 60.35px;
   font-weight: 700;
   margin: -1px auto;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .slide a {
@@ -658,11 +660,12 @@ body
 
 
 .btn-slide {
-  padding: 11px 41px;
+  padding-top: 6px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 13px;
   
-  font-size: 32px;
-  line-height: 44px;
-  font-weight: 700;
+  
   color: #fff;
 }
 
@@ -678,9 +681,9 @@ body
 
 .slider-controls {
   position: absolute;
-  bottom: 24px;
+  bottom: 23px;
   left: 2px;
-  z-index: 30px;
+  z-index: 30;
   
   font-size: 0;
 }
@@ -745,12 +748,12 @@ body > input[type="radio"] {
   width: 560px;
   min-height: 230px;
   margin-right: 26px;
-  border-radius: 11px;
+  border-radius: 18px;
 }
 
 
 .gift-item:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .raspberries {
@@ -784,23 +787,30 @@ body > input[type="radio"] {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
-  margin-left: 20px;
+  padding-right: 21px;
+  padding-left: 21px;
 }
 
 .btn-gift {
-  position: absolute;
+  float: right;
+  margin-top: 44px;
+  margin-right: 21px;
+  margin-bottom: 24px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #fff;
-  padding: 10px 22px;
-  bottom: 25px;
-  right: 20px;
+  
+  padding-top: 10px;
+  padding-bottom: 11px;
+  padding-left: 21px;
+  padding-right: 22px;
+  
 }
 
 .ice-cream {
   margin-bottom: 32px;
-  font-size: 0px;
+  font-size: 0;
   
 }
 
@@ -809,9 +819,10 @@ body > input[type="radio"] {
   display: inline-block;
   vertical-align: top;
   width: 267px;
-  min-height: 232px;
+ 
   margin-right: 26px;
   text-align: center;
+  
 }
 
 .ice-cream-item:nth-child(4n) {
@@ -820,22 +831,23 @@ body > input[type="radio"] {
 
 .ice-cream-image img {
   border-radius: 50%;
-  margin-bottom: 0px;
+  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 
 .ice-cream-hit img {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   
   
 }
 
 .ice-cream-price {
   position: absolute;
-  left: 0px;
-  top: 210px;
+  left: 0;
+  top: 209px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
@@ -850,7 +862,7 @@ body > input[type="radio"] {
 
 .ice-cream-name {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 22px;
   font-weight: 500;
   color: #fff;
   text-decoration: none;
@@ -893,14 +905,20 @@ body > input[type="radio"] {
 }  
 
 .features-left  {
-  position: relative;
   float: left;
   width: 560px;
   margin-right: 26px;
-  
 }
 
-.features-left p {
+.features-right {
+  float:right;
+  width: 560px;
+}
+.feature-item {
+   position: relative;
+}
+
+.feature-item p {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -910,69 +928,11 @@ body > input[type="radio"] {
   padding-left: 78px;
 }
 
-.ice-cream-icon::before  {
-  content: "";
+.feature-item img {
   position: absolute;
-  top: -13px;
-  left: 22px;
-  
-  width: 49px;
-  height: 49px;
-  background: transparent url('../img/ice-cream-icon.png') no-repeat;
-} 
-
-.leaf-icon::before {
-  content: "";
-  position: absolute;
-  top: 75px;
-  left: 22px;
-  width: 49px;
-  height: 49px;
-  
-  background: transparent url('../img/leaf.png') no-repeat;
+  left: 10px;
+  top: 0px;
 }
-
-.features-right {
-  position: relative;
-  float:right;
-  width: 560px;
-}
-
-.features-right p {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 23px;
-  padding-left: 59px;
-  padding-right: 20px;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-}
-
-.cow-icon::before {
-  position: absolute;
-  content: "";
-  
-  top: -13px;
-  left: 2px;
-  
-  width: 49px;
-  height: 49px;
-  
-  background: transparent url('../img/cow-icon.png') no-repeat;
-}
-
-.thermometer-icon::before {
-  position: absolute;
-  content: "";
-  
-  top: 75px;
-  left: 2px;
-  
-  width: 49px;
-  height: 49px;
-  background: transparent url('../img/thermometer-icon.png') no-repeat;
-} 
 
 .communion {
   margin-bottom: 40px;
@@ -988,7 +948,7 @@ body > input[type="radio"] {
 }
 
 .communion-item:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .blog {
@@ -1129,12 +1089,12 @@ body > input[type="radio"] {
   box-sizing: border-box;
   width: 1200px;
   position: relative;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
   min-height: 430px;
   margin: 0 auto;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
   
 }
 .map {
@@ -1162,7 +1122,7 @@ body > input[type="radio"] {
   color: #323232;
   padding-left: 25px;
   padding-right: 100px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 .contacts-form p:first-of-type {
@@ -1206,7 +1166,6 @@ body > input[type="radio"] {
 
 .main-footer {
   min-height:103px;
-  outline: 1px solid red;
 }
 
 .footer-socials{
@@ -1238,7 +1197,7 @@ body > input[type="radio"] {
 }
 
 .link:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .link:hover {
@@ -1402,6 +1361,21 @@ body > input[type="radio"] {
 
 /*----------- Всплывающая форма -------- */
 
+@keyframes appearance {
+    0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .modal-content {
   display:none;
   position: fixed;
@@ -1419,8 +1393,8 @@ body > input[type="radio"] {
 
 .modal-content-show {
   display: block;
+  animation: appearance 0.6s;
 }
-
 
 .modal-content-close {
   position: absolute;
@@ -1603,11 +1577,14 @@ body > input[type="radio"] {
 /*------------ catalog.html -----------*/
 
 .site-wrapper-inner {
-  width: 1200px;
   margin: 0 auto;
   
   background-color: #849d8f; 
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, transparent 19%); 
+  
+}
+
+.shopping-icon-full {
   
 }
  
@@ -1622,8 +1599,8 @@ body > input[type="radio"] {
   top: 40px;
   right: 100px;
     
-  width: 541px;
-  padding-left: 15px;
+  width: 540px;
+  padding-left: 17px;
   padding-right: 15px;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -1635,7 +1612,7 @@ body > input[type="radio"] {
   line-height: 16px;
   font-weight: 400;
   box-shadow: 0 20px 20px 0 rgba(0,0,0,0.4);
-  z-index: 100;
+  z-index: 10;
   
 }
 .table {
@@ -1652,7 +1629,7 @@ body > input[type="radio"] {
   
 }
 
-.cell a {
+.cell-delete a {
   position: relative;
   width: 18px;
   height: 18px;
@@ -1661,8 +1638,8 @@ body > input[type="radio"] {
   cursor: pointer;
 }
 
-.cell a::before,
-.cell a::after {
+.cell-delete a::before,
+.cell-delete a::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -1674,73 +1651,47 @@ body > input[type="radio"] {
   border-radius: 1px;
 }
 
-.cell a::before {
+.cell-delete a::before {
   transform: rotate(45deg);
 }
 
-.cell a::after {
+.cell-delete a::after {
   transform: rotate(-45deg);
 }
 
 .cell-delete {
   padding-right: 15px;
-  
+    
 }
 
-.cell-img-orange {
-  border-radius: 50%;
-  width: 33px;
-  height: 33px;
-  background-position: -10px -478px;
- 
+.cell-img {
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px; 
 }
 
-.cell-name-orange {
-  position: relative;
+.cell-name {
   width: 216px;
+  padding-top: 5px;
   padding-right: 33px;
   padding-left: 50px;
   padding-bottom: 20px;
   
 }
 
-.cell-name-orange::before {
-  position: absolute;
-  content:"";
-  top: 0px;
-  left: 0px;
-  width: 33px;
-  height: 33px;
-  background-image: url('../img/sprite.png'); 
-  background-position: -10px -478px;
-  border-radius: 50%;
-}
-
-.cell-name-strawberry {
-  position: relative;
-  width: 216px;
-  padding-right: 33px;
-  padding-left: 50px;
-}
-
-.cell-name-strawberry::before {
-  position: absolute;
-  content:"";
-  top: 0px;
-  left: 0px;
-  width: 33px;
-  height: 33px;
-  background-image: url('../img/sprite.png'); 
-  background-position: -10px -531px;
-  border-radius: 50%;
-}
-
 .cell-volume {
-  padding-right: 28px;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px; 
 }
 
 .cell-cost {
-  padding-right: 20px;
+ padding-top: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px; 
 }
 
 .cell span {
@@ -1843,7 +1794,6 @@ body > input[type="radio"] {
 .filter {
   width: 880px;
   margin-bottom: 39px;
-  outline: 2px solid yellow;
   padding-bottom: 9px;
 }
 
@@ -1875,8 +1825,8 @@ body > input[type="radio"] {
   color: #fff;
   background: rgba(255, 255, 255, 0.2);
   
-  margin-left: 0px;
-  margin-bottom: 0px;
+  margin-left: 0;
+  margin-bottom: 0;
   padding-left: 12px;
   padding-right: 15px;
   padding-top: 7px;
@@ -1887,6 +1837,7 @@ body > input[type="radio"] {
 .sorting-criterion select:hover {
   color: #000;
   background: #fff;
+  cursor: pointer;
   
 }
 
@@ -1963,6 +1914,13 @@ body > input[type="radio"] {
   right: 50px;
 }
 
+.skroll_left:hover,
+.skroll_right:hover {
+  transform: scale(1.1);
+  
+}
+
+
 .skroll_field {
   width: 100px;
   height: 4px;
@@ -1993,8 +1951,8 @@ body > input[type="radio"] {
   margin: 0;
   padding: 0;
   margin-top: 24px;
-  margin-left: 0px;
-  margin-bottom: 0px;
+  margin-left: 0;
+  margin-bottom: 0;
   
   font-size: 14px;
   line-height: 16px;
@@ -2015,67 +1973,66 @@ body > input[type="radio"] {
 
 .fatness-item input[type="radio"] {
   display: none;
-}
+} 
 
 .fatness-item input[type="radio"] + label {
+  position: relative;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #fff;
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .fatness-item input[type="radio"] + label::before{
-  content: "";
+  content: "";       
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  border: 3px solid #849d8f;
-  box-shadow:  0 0 0 1px #f8f7f4;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #f8f7f4;
   border-radius: 50%;
   vertical-align: middle;
-  margin-right: 10px;
+  margin-right: 2px;
 }
 
-.fatness-item input[type="radio"] + label:hover::before{
-  content: "";
-  display: inline-block;
+.fatness-item input[type="radio"] + label::after{
+  position: absolute;
+  content: "";       
+  display: none;
   width: 12px;
   height: 12px;
-  border: 3px solid #849d8f;
-  box-shadow: 0 0 0 2px #f8f7f4;
   border-radius: 50%;
-  vertical-align: middle;
-  margin-right: 10px;
+  background-color: #f8f7f4;
+  top: 5px;
+  left: 4px;
+}
+
+
+.fatness-item input[type="radio"] + label:hover::before{
+  border: 1px solid #f8f7f4;
+  box-shadow: 0 0 0 1px #f8f7f4;
+  cursor: pointer;
+  
 }
 
 .fatness-item input[type="radio"]:disabled + label::before {
-  content: "";
-  display: inline-block;
-  width:12px;
-  height: 12px;
-  border: 3px solid #849d8f;
-  box-shadow: 0 0 0 1px #b2c1b7;
-  border-radius: 50%;
-  vertical-align: middle;
-  margin-right: 0px;
+  opacity: 0.4;
 }
 
-.fatness-item input[type="radio"]:checked + label::before{
-  background-color: #f8f7f4;
+
+.fatness-item input[type="radio"]:checked + label::after{
+   display: block;
 }
 
-.fatness-item input[type="radio"]:checked:disabled + label::before {
-  content: "";
-  display: inline-block;
-  width:12px;
-  height: 12px;
-  border: 3px solid #849d8f;
-  box-shadow: 0 0 0 1px #b2c1b7;
-  border-radius: 50%;
-  vertical-align: middle;
-  margin-right: 10px;
-  background-color: #b2c1b7;
+.fatness-item input[type="radio"]:checked:disabled + label::after {
+  display: block;
+  opacity: 0.4;
+}
+
+.fatness-item input[type="radio"]:disabled + label:hover::before {
+  box-shadow: none;
+  border: 1px solid #f8f7f4;
+  opacity: 0.4;
 }
 
 .wrapper-toppings {
@@ -2109,103 +2066,68 @@ body > input[type="radio"] {
   display: inline-block;
   vertical-align: middle;
   margin-left: 7px;
-  margin-right: 0px;
-  
-  
+  margin-right: 0;
 }
 
 .topping-item:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .topping-item input[type="checkbox"] {
   display: none;
 }
+
 .topping-item input[type="checkbox"] + label {
-  
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #fff;
   padding-left: 10px;
+  
 }
 
 .topping-item input[type="checkbox"] + label::before {
   content: "";
   display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #849d8f; 
-  box-shadow: 0 0 0 1px #fff;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #fff; 
   vertical-align: middle;
   margin-right: 13px;
   border-radius: 3px;
 }
 
 .topping-item input[type="checkbox"] + label:hover::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #fff;
   box-shadow: 0 0 0 1px #fff;
-  vertical-align: middle;
-  margin-right: 13px;
-  border-radius: 3px;
+  cursor: pointer;
+  
 }
 
 .topping-item input[type="checkbox"]:checked + label::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #849d8f; 
-  box-shadow: 0 0 0 1px #fff;
-  vertical-align: middle;
-  margin-right: 13px;
-  border-radius: 3px;
   background: url('../img/check.png') no-repeat 50%;
 }
 
 .topping-item input[type="checkbox"]:checked + label:hover::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #fff; 
   box-shadow: 0 0 0 1px #fff;
-  vertical-align: middle;
-  margin-right: 13px;
-  border-radius: 3px;
-  background: url('../img/check.png') no-repeat 50%;
 }
 
 .topping-item input[type="checkbox"]:disabled + label::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #849d8f; 
-  box-shadow: 0 0 0 1px #fff;
-  vertical-align: middle;
-  margin-right: 15px;
-  border-radius: 3px;
   opacity: 0.4;
 }
 
 .topping-item input[type="checkbox"]:checked:disabled + label::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #849d8f; 
-  box-shadow: 0 0 0 1px #fff;
-  vertical-align: middle;
-  margin-right: 15px;
-  border-radius: 3px;
   background: url('../img/check.png') no-repeat 50%;
   opacity: 0.4;
 }
+
+.topping-item input[type="checkbox"]:disabled + label:hover::before {
+  box-shadow: none;
+}
+
+.topping-item input[type="checkbox"]:checked:disabled + label:hover::before {
+  box-shadow: none;
+}
+
 
 .filter-apply {
   display: inline-block;
@@ -2244,7 +2166,7 @@ body > input[type="radio"] {
 }
 
 .search-result {
-  font-size: 0px;
+  font-size: 0;
   margin-bottom: 60px;
 }
 
@@ -2257,16 +2179,7 @@ body > input[type="radio"] {
   margin-right: 26px;
   margin-bottom: 16px;
   text-align: center;
-  outline: 2px solid #0deb6c;
-}
-
-.ice-cream-image {
-  position: relative;
-  z-index: 101;
-}
-
-.ice-cream-price {
-  z-index: 101;
+  
 }
 
 .ice-cream-item-inner:hover::after {
@@ -2282,7 +2195,7 @@ body > input[type="radio"] {
   padding-left: 13px;
   padding-right: 13px;
   
-  z-index: 100;
+  z-index: 1;
   border-radius: 13px;
   cursor:pointer;
   background-color: rgba(255, 255, 255, 0.2);
@@ -2305,7 +2218,7 @@ body > input[type="radio"] {
   background-position: 0 95%;
   background-size: 10px 1px; 
   background-repeat: repeat-x;
-  z-index: 102;
+  z-index: 5;
   
 } 
 
@@ -2327,7 +2240,7 @@ body > input[type="radio"] {
   
   top: 330px;
   left: 20px;
-  z-index: 110;
+  z-index: 2;
   cursor: pointer;
 }
 
@@ -2359,6 +2272,18 @@ body > input[type="radio"] {
   text-align: center;
   }
 
+.page[href]:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.page[href]:active {
+  color: #000;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+
 .page-current {
   font-size: 16px;
   line-height: 26px;
@@ -2375,30 +2300,12 @@ body > input[type="radio"] {
   color: rgba(255, 255, 255, 0.2);
 }
 
-.next{
-  margin-left: 14px;
-  color: #fff;
-}
+.previous:hover,
+.previous:active {
+  color: rgba(255, 255, 255, 0.2);
+  background-color: transparent;
 
-.page:hover {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-}
-
-.page:active {
-  color: #000;
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 50%;
-}
-
-
-.current {
-  color: #000;
-  min-width: 27px;
-  height: 27px;
-border-radius: 50%;
-  background: #ffffff; 
+  
 }
 
 

@@ -21,7 +21,7 @@
             </div>
             <nav class="main-navigation">
               <ul class="main-menu">
-                <li><a href="catalog.html">Каталог</a>
+                <li class="link-menu"><a href="#">Каталог</a>
                   <ul class="main-submenu">
                     <li><a class="novelty" href="#">Новинки</a></li>
                     <li><a href="catalog.html">Сливочное</a></li>
@@ -30,8 +30,8 @@
                     <li><a href="#">Мелорин</a></li>
                   </ul>
                 </li>  
-                <li><a href="#">Доставка и оплата</a></li>
-                <li><a href="#">О Компании</a></li>
+                <li class="link-menu"><a href="#">Доставка и оплата</a></li>
+                <li class="link-menu"><a href="#">О Компании</a></li>
               </ul>
             </nav>
         
@@ -49,10 +49,14 @@
               <a class="enter-icon" href="#">Вход</a>
               <div class="enter-hover">
                 <form class="enter-form clearfix" method="post" action="#">
-                  <input type="text" id="email" name="email" placeholder="Электронная почта">
-                  <label for="email">Электронная почта</label>
-                  <input type="text" id="login" name="login" placeholder="Пароль">
-                  <label for="login">Пароль</label>
+                  <div class="enter-input">
+                    <input type="text" id="email" name="email" placeholder="Электронная почта">
+                    <label for="email">Электронная почта</label>
+                  </div>
+                  <div class="enter-input">
+                    <input type="password" id="login" name="login" placeholder="Пароль">
+                    <label for="login">Пароль</label>
+                  </div>  
                   <button class="btn btn-enter" type="submit">Войти</button>
                   <div class="enter-link">
                     <a href="#">Забыли пароль?</a>
@@ -97,12 +101,12 @@
             </div>  
                           
             <div class="gift-container clearfix">
-              <div class="gift-item raspberries">
+              <div class="gift-item raspberries clearfix">
                 <h3>Малинка даром!</h3>
                 <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
                 <a class="btn btn-gift" href="#">Хочу варенье!</a>
               </div>
-              <div class="gift-item chocolate" >
+              <div class="gift-item chocolate clearfix" >
                 <h3>Шоколадки даром!</h3> 
                 <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
                 <a class="btn btn-gift" href="#">Хочу шоколадки!</a>
@@ -117,7 +121,7 @@
                 <div class="ice-cream-hit" >
                   <img  src="img/hit.png" width="61" height="61" alt="хит продаж">
                 </div>  
-                <span class="ice-cream-price">310&#8381;<span>/кг</span></span>
+                <span class="ice-cream-price">310 &#8381;<span>/кг</span></span>
                 <a class="ice-cream-name" href="#" >Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               </div>
           
@@ -128,7 +132,7 @@
                 <div class="ice-cream-hit" >
                   <img  src="img/hit.png" width="61" height="61" alt="хит продаж">
                 </div>  
-                <span class="ice-cream-price">380&#8381;<span>/кг</span></span>
+                <span class="ice-cream-price">380 &#8381;<span>/кг</span></span>
                 <a class="ice-cream-name" href="#" >Сливочно-кофейное с кусочками шоколада</a>
               </div>
           
@@ -139,7 +143,7 @@
                 <div class="ice-cream-hit" >
                   <img  src="img/hit.png" width="61" height="61" alt="хит продаж">
                 </div>  
-                <span class="ice-cream-price">355&#8381;<span>/кг</span></span>
+                <span class="ice-cream-price">355 &#8381;<span>/кг</span></span>
                 <a class="ice-cream-name" href="#" >Сливочно-клубничное с присыпкой из белого шоколада</a>
               </div>
           
@@ -150,20 +154,32 @@
                 <div class="ice-cream-hit" >
                   <img  src="img/hit.png" width="61" height="61" alt="хит продаж">
                 </div>  
-                <span class="ice-cream-price">415&#8381;<span>/кг</span></span>
+                <span class="ice-cream-price">415 &#8381;<span>/кг</span></span>
                 <a class="ice-cream-name" href="#" >Сливочное крем-брюле с карамельной подливкой</a>
               </div>
             </div>
         
-            <section class="features clearfix">
+             <section class="features clearfix">
               <h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
               <div class="features-left">
-                <p class="ice-cream-icon"> Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>  
-                <p class="leaf-icon">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>  
+                <div class="feature-item">
+                  <img src="img/ice-cream-icon.png" width="49" height="49" alt="собственное производство">
+                  <p> Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                </div>
+                <div class="feature-item">
+                  <img src="img/leaf.png" width="49" height="49" alt="натуральное сырье">
+                  <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>  
+                </div>  
               </div> 
               <div class="features-right">
-                <p class="cow-icon" >Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>  
-                <p class="thermometer-icon">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>  
+                <div class="feature-item">
+                  <img src="img/cow-icon.png" width="49" height="49" alt="качественные ингредиенты">
+                  <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p> 
+                </div>
+                <div class="feature-item">
+                  <img src="img/thermometer-icon.png" width="49" height="49" alt="термоупаковка">
+                  <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>  
+                </div>  
               </div>
             </section>
           
@@ -242,7 +258,7 @@
           <label for="name">Как вас зовут?</label>
         </div>
         <div class="wrapper-input">
-          <input class="input-data" type="text" if="your-mail" name="your-mail" placeholder="Ваша почта для ответа?">
+          <input class="input-data" type="text" id="your-mail" name="your-mail" placeholder="Ваша почта для ответа?">
           <label for="your-mail">Ваша почта для ответа</label>
         </div>
         <div class="wrapper-input">
@@ -254,7 +270,7 @@
     </div>  
     <div class="modal-overlay"></div>
     
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=5M9b_7KjkB15a9XLBF0X9IHAoAzjGrNx&amp;width=100%&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=interactive-map"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=5M9b_7KjkB15a9XLBF0X9IHAoAzjGrNx&amp;width=1200&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=interactive-map"></script>
     
     
     <script src="js/modal-window.js"></script>

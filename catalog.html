@@ -11,7 +11,7 @@
     
     <body>
       <div class="site-wrapper-inner">
-        <div class="content-wrapper-inner">
+        <div class="content-wrapper">
           <header class="main-header">
             <div class="container clearfix">
               <div class="logo">
@@ -21,7 +21,7 @@
               </div>
               <nav class="main-navigation">
                 <ul class="main-menu">
-                  <li><a class="current" href="#">Каталог</a>
+                  <li class="link-menu current"><a href="#">Каталог</a>
                     <ul class="main-submenu">
                       <li><a class="novelty" href="#">Новинки</a></li>
                       <li class="current-product"><a>Сливочное</a></li>
@@ -30,8 +30,8 @@
                       <li><a href="#">Мелорин</a></li>
                     </ul>
                   </li>  
-                  <li><a href="#">Доставка и оплата</a></li>
-                  <li><a href="#">О Компании</a></li>
+                  <li class="link-menu"><a href="#">Доставка и оплата</a></li>
+                  <li class="link-menu"><a href="#">О Компании</a></li>
                 </ul>
               </nav>
         
@@ -39,24 +39,22 @@
                 <div class="search">
                   <a class="search-icon" href=""></a>
                   <div class="search-hover">
-                  <form class="search-subject">
-                    <div class="wrapper-input">
-                      <input type="text" id="search" name="search" placeholder="Что ищем?" >
-                      <label for="search">Что ищем?</label>
-                    </div>  
-                  </form>  
+                    <form class="search-subject">
+                      <input type="text" id="find" name="find" placeholder="Что ищем?" >
+                      <label for="find">Что ищем?</label>
+                    </form>  
                   </div>  
                 </div>
                 <div class="enter">
                   <a class="enter-icon" href="#">Вход</a>
                   <div class="enter-hover">
-                    <form class="enter-form" method="post" action="#">
-                      <div class="wrapper-input">
+                    <form class="enter-form clearfix" method="post" action="#">
+                      <div class="enter-input">
                         <input type="text" id="email" name="email" placeholder="Электронная почта">
                         <label for="email">Электронная почта</label>
-                      </div>  
-                      <div class="wrapper-input">  
-                        <input type="text" id="login" name="login" placeholder="Пароль">
+                      </div>
+                      <div class="enter-input">
+                        <input type="password" id="login" name="login" placeholder="Пароль">
                         <label for="login">Пароль</label>
                       </div>  
                       <button class="btn btn-enter" type="submit">Войти</button>
@@ -75,7 +73,10 @@
                         <div class="cell cell-delete">
                           <a href="#">Удалить</a>
                         </div>
-                        <div class="cell cell-name-orange">
+                        <div class="cell cell-img">
+                          <img src="img/ice-cream-cart-1.png" width="33" height="33" alt="мороженное">
+                        </div>
+                        <div class="cell cell-name">
                           Пломбир с апельсиновым джемом
                         </div>
                         <div class="cell cell-volume"> 
@@ -89,7 +90,10 @@
                         <div class="cell cell-delete">
                           <a href="#">Удалить</a>
                         </div>
-                        <div class="cell cell-name-strawberry">
+                        <div class="cell cell-img">
+                          <img src="img/ice-cream-cart-2.png" width="33" height="33" alt="мороженное">
+                        </div>
+                        <div class="cell cell-name">
                           Клубничный пломбир с присыпкой из белого шоколада
                         </div>
                         <div class="cell cell-volume"> 
@@ -164,11 +168,11 @@
                         <label for="ten">до 10%</label>
                       </div>
                       <div class="fatness-item">
-                        <input id="thirty" type="radio" value="thirty" name="thirty">
+                        <input id="thirty" type="radio" value="thirty" name="thirty" disabled checked>
                         <label for="thirty">до 30%</label>
                       </div>
                       <div class="fatness-item">
-                        <input id="higher" type="radio" value="higher" name="higher">
+                        <input id="higher" type="radio" value="higher" name="higher" disabled>
                         <label for="higher">выше 30%</label>
                       </div>
                     </div>  
@@ -194,7 +198,7 @@
                         <label for="syrup">сиропы</label>
                       </div>
                       <div class="topping-item">
-                        <input id="jam" type="checkbox" name="jam">
+                        <input id="jam" type="checkbox" name="jam" disabled>
                         <label for="jam">джемы</label>
                       </div>
                     </div>  
@@ -315,13 +319,13 @@
               </div>
           
               <div class="pagination">
-                <a class="previous" href="#">&lt;</a>
+                <a class="page previous">&lt;</a>
                 <a class="page page-current" href="#">1</a>
                 <a href="#" class="page">2</a>
                 <a href="#" class="page">3</a>
                 <a href="#" class="page">4</a>
                 <a href="#" class="page">5</a>
-                <a class="next" href="#">&gt;</a>
+                <a href="#"class="page next" href="#">&gt;</a>
               </div>
             </div>
           </main>
