@@ -12,7 +12,7 @@
     <body>
       <div class="site-wrapper-inner">
         <div class="content-wrapper">
-          <header class="main-header">
+          <header class="main-header-inner">
             <div class="container clearfix">
               <div class="logo">
                 <a href="index.html">
@@ -77,13 +77,13 @@
                           <img src="img/ice-cream-cart-1.png" width="33" height="33" alt="мороженное">
                         </div>
                         <div class="cell cell-name">
-                          Пломбир с апельсиновым джемом
+                          <a class="choice" href="#">Пломбир с апельсиновым джемом</a>
                         </div>
                         <div class="cell cell-volume"> 
-                          1,5 кг х <span>200 руб.</span>
+                          <p>1,5 кг х <span>200 руб.</span></p>
                         </div>
                         <div class="cell cell-cost">
-                          300 руб.
+                          <span>300 руб.</span>
                         </div>  
                       </div>
                       <div class="row">
@@ -94,21 +94,22 @@
                           <img src="img/ice-cream-cart-2.png" width="33" height="33" alt="мороженное">
                         </div>
                         <div class="cell cell-name">
-                          Клубничный пломбир с присыпкой из белого шоколада
+                          <a class="choice" href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
                         </div>
                         <div class="cell cell-volume"> 
-                          1,5 кг х <span>300 руб.</span>
+                          <p>1,5 кг х <span>300 руб.</span></p>
                         </div>
                         <div class="cell cell-cost">
-                          450 руб.
+                          <span>450 руб.</span>
                         </div>  
                       </div>
                     </div> 
-                    <p>Итого: 750 руб.</p>
+                    <p class="total">Итого: 750 руб.</p>
                     <button class="btn btn-order" type="submit">Оформить заказ</button>
                   </form>  
                 </div>
-              </div>        
+              </div>    
+              
               <div class="timetable">	     
                 <p class="time">С 10 до 20, ежедневно</p> 		
                 <p class="phone">8 812 450-25-25</p>	
@@ -118,11 +119,11 @@
     
           <main class="container clearfix">
             <ul class="breadcrumbs">
-              <li><a href="index.html">Главная</a></li>
+              <li><a href="index.html">Главная  </a></li>
               <span>&raquo;</span>
-              <li><a href="#">Каталог</a></li>
+              <li><a href="#">  Каталог  </a></li>
               <span>&raquo;</span>
-              <li>Сливочное</li>   
+              <li>  Сливочное</li>   
             </ul>  
           
       
@@ -131,7 +132,7 @@
               <div class="filter">
                 <form method="get" action="https://echo.htmlacademy.ru"> 
                   <div class="sorting-criterion">
-                    <p>Сортировка</p>
+                    <p>Сортировка:</p>
                     <select name="list-criterion">
                       <option value="popular">по популярности</option> 
                       <option value="cheap">сначала недорогие</option>
@@ -210,122 +211,146 @@
         
               <div class="search-result">
                 <div class="ice-cream-item-inner">
-                  <div class="ice-cream-image">
+                  <div class="ice-cream-image-inner">
                     <img src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                  </div>  
-                  <span class="ice-cream-price">310&#8381;<span>/кг</span></span>
+                  </div>
+                  <div class="ice-cream-price-inner">
+                    <span class="font-price">310&#8381;</span><span class="anothe-font">/кг</span>
+                  </div>
                   <a class="ice-cream-name-inner" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                   <a href="#" class="btn btn-show">Быстрый просмотр</a>
                 </div>
           
                 <div class="ice-cream-item-inner">
-                  <div class="ice-cream-image">
+                  <div class="ice-cream-image-inner">
                     <img src="img/coffe.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                   </div>  
-                  <span class="ice-cream-price">380&#8381;<span>/кг</span></span>
+                  <div class="ice-cream-price-inner">
+                    <span class="font-price">380&#8381;</span><span class="anothe-font">/кг</span>
+                  </div>  
                   <a class="ice-cream-name-inner" href="#" >Сливочно-кофейное с кусочками шоколада</a>
                   <a href="#" class="btn btn-show">Быстрый просмотр</a>
                 </div>
           
                 <div class="ice-cream-item-inner">
-                  <div class="ice-cream-image">
+                  <div class="ice-cream-image-inner">
                     <img src="img/strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                  </div>
+                  <div class="ice-cream-price-inner">
+                    <span class="font-price">355&#8381;</span><span class="anothe-font">/кг</span>
                   </div>  
-                  <span class="ice-cream-price">355&#8381;<span>/кг</span></span>
                   <span class="ice-cream-name-inner">Сливочно-клубничное с присыпкой из белого шоколада</span>
                   <a href="#" class="btn btn-show">Быстрый просмотр</a>
                 </div>
           
                 <div class="ice-cream-item-inner">
-                  <div class="ice-cream-image">
+                  <div class="ice-cream-image-inner">
                     <img src="img/creme-brulee.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                  </div>
+                  <div class="ice-cream-price-inner">
+                    <span class="font-price">415&#8381;</span><span class="anothe-font">/кг</span>
                   </div>  
-                  <span class="ice-cream-price">415&#8381;<span>/кг</span></span>
                   <a class="ice-cream-name-inner" href="#" >Сливочное крем-брюле с карамельной подливкой</a>
                   <a href="#" class="btn btn-show">Быстрый просмотр</a>
                 </div>
           
                 <div class="ice-cream-item-inner">
-                  <div class="ice-cream-image">
+                  <div class="ice-cream-image-inner">
                     <img src="img/lingonberry.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
+                  </div> 
+                  <div class="ice-cream-price-inner">
+                    <span class="font-price">325&#8381;</span><span class="anothe-font">/кг</span>
                   </div>  
-                  <span class="ice-cream-price">325&#8381;<span>/кг</span></span>
                   <a class="ice-cream-name-inner" href="#" >Сливочное с брусничным джемом</a>
                   <a href="#" class="btn btn-show">Быстрый просмотр</a>
                 </div>
           
                 <div class="ice-cream-item-inner">
-                  <div class="ice-cream-image">
+                  <div class="ice-cream-image-inner">
                     <img src="img/bilberry.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+                  </div>
+                  <div class="ice-cream-price-inner">
+                    <span class="font-price">410&#8381;</span><span class="anothe-font">/кг</span>
                   </div>  
-                  <span class="ice-cream-price">410&#8381;<span>/кг</span></span>
                   <a class="ice-cream-name-inner" href="#" >Сливочно-черничное с цельными ягодами черники </a>
                   <a href="#" class="btn btn-show">Быстрый просмотр</a>
                 </div>
           
                 <div class="ice-cream-item-inner">
-                  <div class="ice-cream-image">
+                  <div class="ice-cream-image-inner">
                     <img src="img/lemon.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+                  </div>
+                  <div class="ice-cream-price-inner">
+                    <span class="font-price">375&#8381;</span><span class="anothe-font">/кг</span>
                   </div>  
-                  <span class="ice-cream-price">375&#8381;<span>/кг</span></span>
                   <a class="ice-cream-name-inner" href="#" >Сливочно-лимонное с карамельной присыпкой</a>
                   <a href="#" class="btn btn-show">Быстрый просмотр</a>
                 </div>
           
                 <div class="ice-cream-item-inner">
-                  <div class="ice-cream-image">
+                  <div class="ice-cream-image-inner">
                     <img src="img/chocolate-ice-cream.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+                  </div>
+                  <div class="ice-cream-price-inner">
+                    <span class="font-price">320&#8381;</span><span class="anothe-font">/кг</span>
                   </div>  
-                  <span class="ice-cream-price">320&#8381;<span>/кг</span></span>
                   <a class="ice-cream-name-inner" href="#" >Сливочное с шоколадной стружкой</a>
                   <a href="#" class="btn btn-show">Быстрый просмотр</a>
                 </div>
           
                 <div class="ice-cream-item-inner">
-                  <div class="ice-cream-image">
+                  <div class="ice-cream-image-inner">
                     <img src="img/vanilla.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
-                  </div>  
-                  <span class="ice-cream-price">440&#8381;<span>/кг</span></span>
+                  </div>
+                  <div class="ice-cream-price-inner">
+                    <span class="font-price">440&#8381;</span><span class="anothe-font">/кг</span>
+                  </div>    
                   <a class="ice-cream-name-inner" href="#" >Сливочно-ванильное с кусочками шоколада</a>
                   <a href="#" class="btn btn-show">Быстрый просмотр</a>
                 </div>
           
                 <div class="ice-cream-item-inner">
-                  <div class="ice-cream-image">
+                  <div class="ice-cream-image-inner">
                     <img src="img/mentha.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
+                  </div>
+                  <div class="ice-cream-price-inner">
+                    <span class="font-price">435&#8381;</span><span class="anothe-font">/кг</span>
                   </div>  
-                  <span class="ice-cream-price">435&#8381;<span>/кг</span></span>
                   <a class="ice-cream-name-inner" href="#" >Сливочноe с ментоловым сиропом</a>
                   <a href="#" class="btn btn-show">Быстрый просмотр</a>
                 </div>
           
                 <div class="ice-cream-item-inner">
-                  <div class="ice-cream-image">
+                  <div class="ice-cream-image-inner">
                     <img src="img/dark-chocolate.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+                  </div>
+                  <div class="ice-cream-price-inner">
+                    <span class="font-price">355&#8381;</span><span class="anothe-font">/кг</span>
                   </div>  
-                  <span class="ice-cream-price">355&#8381;<span>/кг</span></span>
                   <a class="ice-cream-name-inner" href="#">Сливочное с кусочками черного шоколада</a>
                   <a href="#" class="btn btn-show">Быстрый просмотр</a>
                 </div>
           
                 <div class="ice-cream-item-inner">
-                  <div class="ice-cream-image">
+                  <div class="ice-cream-image-inner">
                     <img src="img/mint-syrup.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
+                  </div>
+                  <div class="ice-cream-price-inner">
+                    <span class="font-price">420&#8381;</span><span class="anothe-font">/кг</span>
                   </div>  
-                  <span class="ice-cream-price">420&#8381;<span>/кг</span></span>
                   <a class="ice-cream-name-inner" href="#" >Сливочное с мятным сиропом</a>
                   <a href="#" class="btn btn-show">Быстрый просмотр</a>
                 </div>
               </div>
           
               <div class="pagination">
-                <a class="page previous">&lt;</a>
+                <a class="previous">&#8249;</a>
                 <a class="page page-current" href="#">1</a>
                 <a href="#" class="page">2</a>
                 <a href="#" class="page">3</a>
                 <a href="#" class="page">4</a>
                 <a href="#" class="page">5</a>
-                <a href="#"class="page next" href="#">&gt;</a>
+                <a href="#"class="next" href="#">&#8250;</a>
               </div>
             </div>
           </main>
@@ -333,11 +358,11 @@
           <footer class="main-footer">
             <div class="container clearfix">
               <div class="footer-socials">
-                <a class="link link-tw" href="#">Twitter</a>
-                <a class="link link-inst" href="">Inst</a>
-                <a class="link link-fb" href="">Fb</a>
-                <a class="link link-vk" href="">Vk</a>
-              </div>
+              <a class="social social-tw" href="#">Twitter</a>
+              <a class="social social-inst" href="">Inst</a>
+              <a class="social social-fb" href="">Fb</a>
+              <a class="social social-vk" href="">Vk</a>
+            </div>
           
               <div class="provider-info clearfix">
                 <ul class="provider-info-left">

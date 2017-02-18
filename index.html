@@ -35,7 +35,7 @@
               </ul>
             </nav>
         
-            <div class="user-blok">
+            <div class="user-blok clearfix">
               <div class="search">
                 <a class="search-icon" href="#"></a>
                 <div class="search-hover">
@@ -44,30 +44,30 @@
                     <label for="find">Что ищем?</label>
                   </form>  
                 </div>  
-            </div>
-            <div class="enter">
-              <a class="enter-icon" href="#">Вход</a>
-              <div class="enter-hover">
-                <form class="enter-form clearfix" method="post" action="#">
-                  <div class="enter-input">
-                    <input type="text" id="email" name="email" placeholder="Электронная почта">
-                    <label for="email">Электронная почта</label>
-                  </div>
-                  <div class="enter-input">
-                    <input type="password" id="login" name="login" placeholder="Пароль">
-                    <label for="login">Пароль</label>
-                  </div>  
-                  <button class="btn btn-enter" type="submit">Войти</button>
-                  <div class="enter-link">
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
-                  </div>
-                </form>  
+              </div>
+              <div class="enter">
+                <a class="enter-icon" href="#">Вход</a>
+                <div class="enter-hover">
+                  <form class="enter-form clearfix" method="post" action="#">
+                    <div class="enter-input">
+                      <input type="text" id="email" name="email" placeholder="Электронная почта">
+                      <label for="email">Электронная почта</label>
+                    </div>
+                    <div class="enter-input">
+                      <input type="password" id="login" name="login" placeholder="Пароль">
+                      <label for="login">Пароль</label>
+                    </div>  
+                    <button class="btn btn-enter" type="submit">Войти</button>
+                    <div class="enter-link">
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </div>
+                  </form>  
+                </div>  
+              </div>
+              <div class="shopping-cart">
+                <a class="shopping-icon" href="#">Пусто</a>
               </div>  
-            </div>
-            <div class="shopping-cart">
-              <a class="shopping-icon" href="#">Пусто</a>
-            </div>  
             </div>
         
             <div class="timetable">	     
@@ -121,7 +121,9 @@
                 <div class="ice-cream-hit" >
                   <img  src="img/hit.png" width="61" height="61" alt="хит продаж">
                 </div>  
-                <span class="ice-cream-price">310 &#8381;<span>/кг</span></span>
+                <div class="ice-cream-price">
+                  <span class="font-price">310&#8381;</span><span class="anothe-font">/кг</span>
+                </div>  
                 <a class="ice-cream-name" href="#" >Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               </div>
           
@@ -131,8 +133,10 @@
                 </div>  
                 <div class="ice-cream-hit" >
                   <img  src="img/hit.png" width="61" height="61" alt="хит продаж">
+                </div> 
+                <div class="ice-cream-price">
+                  <span class="font-price">380&#8381;</span><span class="anothe-font">/кг</span>
                 </div>  
-                <span class="ice-cream-price">380 &#8381;<span>/кг</span></span>
                 <a class="ice-cream-name" href="#" >Сливочно-кофейное с кусочками шоколада</a>
               </div>
           
@@ -143,7 +147,9 @@
                 <div class="ice-cream-hit" >
                   <img  src="img/hit.png" width="61" height="61" alt="хит продаж">
                 </div>  
-                <span class="ice-cream-price">355 &#8381;<span>/кг</span></span>
+                <div class="ice-cream-price">
+                  <span class="font-price">355&#8381;</span><span class="anothe-font">/кг</span>
+                </div>  
                 <a class="ice-cream-name" href="#" >Сливочно-клубничное с присыпкой из белого шоколада</a>
               </div>
           
@@ -153,13 +159,15 @@
                 </div>  
                 <div class="ice-cream-hit" >
                   <img  src="img/hit.png" width="61" height="61" alt="хит продаж">
+                </div>
+                <div class="ice-cream-price">
+                  <span class="font-price">415&#8381;</span><span class="anothe-font">/кг</span>
                 </div>  
-                <span class="ice-cream-price">415 &#8381;<span>/кг</span></span>
                 <a class="ice-cream-name" href="#" >Сливочное крем-брюле с карамельной подливкой</a>
               </div>
             </div>
         
-             <section class="features clearfix">
+            <section class="features clearfix">
               <h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
               <div class="features-left">
                 <div class="feature-item">
@@ -168,13 +176,15 @@
                 </div>
                 <div class="feature-item">
                   <img src="img/leaf.png" width="49" height="49" alt="натуральное сырье">
-                  <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>  
+                  <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+                  </p>  
                 </div>  
               </div> 
               <div class="features-right">
                 <div class="feature-item">
                   <img src="img/cow-icon.png" width="49" height="49" alt="качественные ингредиенты">
-                  <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p> 
+                  <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+                  </p> 
                 </div>
                 <div class="feature-item">
                   <img src="img/thermometer-icon.png" width="49" height="49" alt="термоупаковка">
@@ -186,14 +196,12 @@
             <div class="communion clearfix">
               <section class="communion-item blog">
                 <p>Новое в нашем блоге</p>
-                <p> 
-                  <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-                </p>  
+                <p><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>  
               </section>
 
               <section class="communion-item subscribe">
                 <div class="subscribe-background">
-                  <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+                  <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                   <form method="post" action="https://echo.htmlacademy.ru">
                     <div class="subscribe-input">
                       <input type="text" id="email-address" name="email-address"  placeholder="Электронная почта">
@@ -209,24 +217,24 @@
           <section class="contacts">
             <div class="map" id="interactive-map"></div>
             <div class="contacts-form">
-              <p>Адрес главного офиса и офлайн магазина:</p>
-              <p class="adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-              <p>Для заказов по телефону:</p>
+              <p class="office">Адрес главного офиса <br>и офлайн магазина:</p>
+              <p class="adress">ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</p>
+              <p class="phone-order">Для заказов по телефону:</p>
               <p class="phone-number">8 812 450-25-25</p> 
-              <p>(с 10 до 20 ежедневно)</p>
+              <p class="worktime">(с 10 до 20 ежедневно)</p>
               <a class="btn btn-contacts" href="#">Форма обратной связи</a>
             </div>
           </section>     
    
         </main>
     
-        <footer class="main-footer clearfix">
+        <footer class="main-footer">
           <div class="container clearfix">
             <div class="footer-socials">
-              <a class="link link-tw" href="#">Twitter</a>
-              <a class="link link-inst" href="">Inst</a>
-              <a class="link link-fb" href="">Fb</a>
-              <a class="link link-vk" href="">Vk</a>
+              <a class="social social-tw" href="#">Twitter</a>
+              <a class="social social-inst" href="">Inst</a>
+              <a class="social social-fb" href="">Fb</a>
+              <a class="social social-vk" href="">Vk</a>
             </div>
           
             <div class="provider-info clearfix">
@@ -272,7 +280,7 @@
     
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=5M9b_7KjkB15a9XLBF0X9IHAoAzjGrNx&amp;width=1200&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=interactive-map"></script>
     
-    
     <script src="js/modal-window.min.js"></script>
+    
   </body>
 </html>
