@@ -1882,7 +1882,7 @@ body > input[type="radio"] {
     cursor: pointer;
 }
 .topping-item input[type="checkbox"]:checked + label::before {
-    background: url('../img/check.png') no-repeat 50%;
+    background: url("../img/check.png") no-repeat 50%;
 }
 .topping-item input[type="checkbox"]:checked + label:hover::before {
     box-shadow: 0 0 0 1px #fff;
