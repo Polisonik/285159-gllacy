@@ -10,12 +10,10 @@ body {
     color: #ffffff;
     background-color: #849d8f;
 }
-
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
-
 .clearfix::after {
     content: "";
     display: table;
@@ -78,8 +76,8 @@ img {
     margin-right: -4px;
     padding-bottom: 10px;
 }
-.main-menu  a {
-  position: relative;
+.main-menu a {
+    position: relative;
     display: block;
     padding-top: 6px;
     padding-bottom: 8px;
@@ -108,19 +106,16 @@ img {
     border-radius: 18px;
     color: #000;
 }
-
 .main-menu a[href]:active {
     background: #ededed;
     border-radius: 18px;
     color: #000;
     box-shadow: inset 0 2px 1px #696969;
 }
-
 .main-menu a[href]:hover::after,
 .main-menu a[href]:active::after {
-  display: none;
+    display: none;
 }
-
 .main-menu .current {
     color: #fff;
     background-color: #d07058;
@@ -160,11 +155,9 @@ img {
     padding-bottom: 7px;
     font-weight: 400;
 }
-
 .main-submenu a::after {
-  display: none;
+    display: none;
 }
-
 .main-submenu a[href]:hover {
     border-radius: 0px;
     background-color: #fbded7;
@@ -306,7 +299,6 @@ img {
 .search-subject input[type="text"]:hover {
     box-shadow: 0 0 0 1px #d3d3d2;
 }
-  
 .search-subject input[type="text"]:focus + label {
     opacity: 1;
     font-size: 11px;
@@ -407,12 +399,10 @@ img {
     left: 32px;
     opacity: 0;
 }
-
 .enter-input input[name="email"]:hover,
 .enter-input input[name="login"]:hover {
     box-shadow: 0 0 0 1px #d3d3d2;
 }
-
 .enter-input input[name="email"]:focus + label,
 .enter-input input[name="login"]:focus + label {
     opacity: 1;
@@ -429,8 +419,9 @@ img {
     background: #f06240;
     background-image: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
     background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
     border-radius: 40px;
+    outline: none;
 }
 .btn-enter {
     margin-left: 19px;
@@ -446,9 +437,6 @@ img {
     border-radius: 20px;
     box-shadow: none;
     border: none;
-    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-    outline: none;
 }
 .enter-link {
     float: right;
@@ -591,12 +579,12 @@ img {
 .btn:hover {
     background-image: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
     background-image: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-    box-shadow: 0 2px 0 2px rgba(172, 16, 0, 1);
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 1);
 }
 .btn:active {
     background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-    box-shadow: inset 0 2px 0 2px rgba(172, 16, 0, 1);
+    background: linear-gradient(to bottom, #d74632 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px 0 rgba(172, 16, 0, 1);
 }
 .slider-controls {
     position: absolute;
@@ -715,27 +703,22 @@ body > input[type="radio"] {
 .ice-cream-item:nth-child(4n) {
     margin-right: 0;
 }
+/*--- Картинка с надписью Хит сделана через псевдоэлемент https://git-scm.com/download/win ---*/
 
 .ice-cream-item::before {
     position: absolute;
-    content:"";
+    content: "";
     width: 61px;
-    height: 61px; 
+    height: 61px;
     top: 0;
     left: 0;
     background-image: url("../img/hit.png");
     z-index: 3;
 }
-
 .ice-cream-image img {
     border-radius: 50%;
     margin-bottom: 0;
     margin-bottom: 5px;
-}
-.ice-cream-hit img {
-    position: absolute;
-    top: 1px;
-    left: 1px;
 }
 .ice-cream-price {
     position: absolute;
@@ -975,7 +958,7 @@ body > input[type="radio"] {
     box-shadow: none;
     border: none;
     text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
     outline: none;
 }
 .contacts {
@@ -1409,8 +1392,7 @@ body > input[type="radio"] {
     box-shadow: none;
     border: none;
     text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-    
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
     outline: none;
 }
 .modal-overlay {
@@ -1449,7 +1431,7 @@ body > input[type="radio"] {
     display: none;
     position: absolute;
     top: 36px;
-    right: 0;
+    right: -1px;
     width: 507px;
     padding-left: 17px;
     padding-right: 15px;
@@ -1466,9 +1448,9 @@ body > input[type="radio"] {
 }
 .table {
     display: table;
-    margin-bottom: 19px;
+    margin-bottom: 15px;
     border-bottom: 1px solid #d1d0ce;
-    padding-bottom: 20px;
+    padding-bottom: 6px;
 }
 .row {
     display: table-row;
@@ -1489,24 +1471,26 @@ body > input[type="radio"] {
 }
 .cell-delete a::before {
     position: absolute;
-    top: -3px;
-    left: -2px;
+    top: 5px;
+    left: -1px;
     content: "";
     width: 14px;
     height: 14px;
     background: url("../img/delete.png") no-repeat;
 }
-
 .cell-img {
     width: 45px;
 }
-
 .cell-img img {
-    display: block;
     vertical-align: top;
+    padding-bottom: 20px;
 }
 .cell-name {
     width: 247px;
+}
+.cell-name a {
+    margin: 0;
+    padding: 0;
 }
 .cell-name .choice {
     color: #323232;
@@ -1514,9 +1498,7 @@ body > input[type="radio"] {
     font-size: 13px;
     line-height: 16px;
     font-weight: 400;
-    
     padding-right: 15px;
-    vertical-align: top;
 }
 .cell-volume {
     width: 122px;
@@ -1534,17 +1516,15 @@ body > input[type="radio"] {
     line-height: 16px;
     font-weight: 400;
 }
-
 .cell-cost {
-  width: 70px;
+    width: 70px;
 }
-
 .total {
     text-align: right;
     font-size: 15px;
     line-height: 18px;
     font-weight: 700;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 .btn-order {
     float: right;
@@ -1559,8 +1539,7 @@ body > input[type="radio"] {
     border-radius: 22px;
     box-shadow: none;
     border: none;
-    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
     outline: none;
 }
 /*----------------------------------------*/
@@ -1575,7 +1554,6 @@ body > input[type="radio"] {
     font-weight: 400;
     color: #fff;
     margin-bottom: 2px;
-    
 }
 .breadcrumbs li {
     display: inline;
@@ -1593,18 +1571,15 @@ body > input[type="radio"] {
     background-size: 10px 1px;
     background-repeat: repeat-x;
 }
-
 .breadcrumbs li::after {
-  content: "\00BB";
-  vertical-align: middle;
-  padding-right: 4px;
-  padding-left: 4px;
+    content: "\00BB";
+    vertical-align: middle;
+    padding-right: 4px;
+    padding-left: 4px;
 }
-
-.breadcrumbs .active-page::after{
-  display: none;
+.breadcrumbs .active-page::after {
+    display: none;
 }
-
 .breadcrumbs a:hover,
 .breadcrumbs a:active {
     color: #ffbc9e;
@@ -1934,7 +1909,6 @@ body > input[type="radio"] {
     outline: none;
     box-shadow: inset 0 2px 1px #696969;
 }
-
 .search-result {
     font-size: 0;
     margin-bottom: 42px;
@@ -1951,43 +1925,38 @@ body > input[type="radio"] {
     font-size: 0;
     padding-bottom: 3px;
 }
-
 .ice-cream-item-inner:nth-child(4n) {
     margin-right: 0;
 }
-
 .ice-cream-item-inner:hover {
-  z-index: 100;
+    z-index: 100;
 }
-
 .ice-cream-item-inner:hover .btn-show,
 .ice-cream-item-inner:hover::before {
-  display: block;
+    display: block;
 }
-
 .ice-cream-item-inner::before {
-  display: none;
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -65px;
-  background-color: rgba(248, 247, 244, 0.3);
-  transition: background-color .5s ease; 
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 10;
-  box-shadow: 0 20px 20px rgba(50, 50, 50, 0.3);
-  padding-bottom: 20px;
+    display: none;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -65px;
+    background-color: rgba(248, 247, 244, 0.3);
+    transition: background-color .5s ease;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 20px 20px rgba(50, 50, 50, 0.3);
+    padding-bottom: 20px;
 }
-
 .btn-show {
     display: none;
     position: absolute;
     bottom: -48px;
     left: 13%;
-    padding-top: 9px;
+    padding-top: 13px;
     padding-bottom: 13px;
     padding-left: 17px;
     padding-right: 18px;
@@ -1997,32 +1966,30 @@ body > input[type="radio"] {
     font-weight: 700;
     color: #fff;
     cursor: pointer;
+    box-shadow: none;
+    box-shadow: 0 2px 2px 0 #ac1000;
+    vertical-align: center;
 }
-
 .cream-img {
-  width: 100%;
-  border-radius: 50%;
-  background: #849d8f;
-  margin-bottom: 5px;
+    width: 100%;
+    border-radius: 50%;
+    background: #849d8f;
+    margin-bottom: 5px;
 }
-
 .ice-cream-block {
-  position: relative;
-  z-index: 11;
+    position: relative;
+    z-index: 11;
 }
-
-
 .price-ice-cream {
-  text-decoration: none;
-  position: absolute;
-  left: 0px;
-  top: 209px;
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 700;
-  white-space: nowrap;
+    text-decoration: none;
+    position: absolute;
+    left: 0px;
+    top: 209px;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+    white-space: nowrap;
 }
-
 .rub {
     position: absolute;
     width: 31px;
@@ -2044,7 +2011,6 @@ body > input[type="radio"] {
     padding-left: 34px;
     letter-spacing: 1px;
 }
-
 .ice-cream-name-inner {
     font-size: 16px;
     line-height: 16px;
@@ -2060,11 +2026,9 @@ body > input[type="radio"] {
     background-repeat: repeat-x;
     z-index: 5;
 }
-
 .ice-cream-item-inner:hover .ice-cream-name-inner {
     background-image: none;
 }
-
 .pagination {
     float: right;
     white-space: nowrap;
